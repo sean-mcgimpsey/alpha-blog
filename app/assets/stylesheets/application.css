@@ -24,6 +24,7 @@ h1 {
     font-style: normal;
     font-family: "Verdana", Times, serif;
     margin-top: 100px;
+    color: white;
 }
 
 
@@ -33,11 +34,12 @@ p1 {
     font-style: normal;
     letter-spacing: 1px;
     text-align: justify;
+    color: white;
     
 }
 
 body {
-    background-color: gray;
+    background-color: #0F234E;
 }
 
 .button {
@@ -45,21 +47,22 @@ body {
   padding: 15px 25px;
   font-size: 15px;
   cursor: pointer;
+  position: relative;
   text-align: center;	
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #555555;
+  background-color: #243C6A;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 9px #010A1D;
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {background-color: #051434}
 
 .button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  background-color: #051434;
+  box-shadow: 0 2px #010A1D;
   transform: translateY(4px);
 }
 
@@ -70,7 +73,7 @@ ul {
     padding: 0;
     overflow: hidden;
     border: 1px solid #e7e7e7;
-    background-color: white;
+    background-color: #010A1D;
     font-family: "Verdana", serif;
     font-size: 14px;
     font-style: normal;
@@ -83,17 +86,24 @@ li {
 
 li a {
     display: block;
-    color: #666;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 li a:hover:not(.active) {
-    background-color: #ddd;
+    background-color: #243C6A;
 }
 
 li a.active {
     color: white;
     background-color: #4CAF50;
+}
+
+.mycenter {
+    position: relative;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%) 
 }
