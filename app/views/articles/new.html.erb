@@ -4,18 +4,24 @@
   <link rel="stylesheet" href="application.css">
 </head>
 <body>
-<center><h1>Create an article</h1>
+<center><h1>Create an article</h1></center>
+<ul><% if @article.errors.any? %>
+<h2> There was a problem creating your article.</h2></br>
+<% @article.errors.full_messages.each do |msg| %>
+<li><p1><%= msg %></li></br>
+</p1><% end %>
+</ul>
+<% end %>
 <%= form_for @article do |f| %>
 <p1>
 <%= f.label :title %><br/>
 <%= f.text_field :title %>
-</p>
-<p1>
+<br/><br/>
 <%= f.label :description %><br/>
 <%= f.text_area :description %>
-</p>
-<p><br/>
-<%= f.submit  :class => "button" , :class => "mycenter" %>
-</p>
-</center>
+<br/><br/>
+
+<%= f.submit  :class => "button" %><br/>
+</p1>
 <% end %>
+<br/>

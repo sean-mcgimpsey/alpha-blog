@@ -38,6 +38,13 @@ p1 {
     
 }
 
+h2 {
+    font-family: "Verdana", serif;
+    color: white;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
 body {
     background-color: #0F234E;
 }
