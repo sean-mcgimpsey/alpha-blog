@@ -1,12 +1,12 @@
 <ul><% if @article.errors.any? %>
 <h2> There was a problem creating your article.</h2></br>
 <% @article.errors.full_messages.each do |msg| %>
-<li><p1><%= msg %></li></br>
-</p1><% end %>
+<li><p><%= msg %></li></br>
+</p><% end %>
 </ul>
 <% end %>
 <%= form_for @article do |f| %>
-<p1>
+<p>
 <%= f.label :title %><br/>
 <%= f.text_field :title %>
 <br/><br/>
@@ -15,7 +15,7 @@
 <br/><br/>
 
 <%= f.submit  :class => "button" %><br/>
-</p1>
+</p>
 <% end %>
 <br/>
 
