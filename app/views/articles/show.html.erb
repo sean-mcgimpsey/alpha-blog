@@ -1,7 +1,7 @@
-<head>
-  <link rel="stylesheet" href="application.css">
-</head>
 <h1> Showing created article</h1>
 
-<p1> Title:<i> <%= @article.title %></i></p1><br/>
-<p1> Description:<i> <%= @article.description %></i></p1>
+<p> Title:<i> <%= @article.title %></i></p><br/>
+<p> Description:<i> <%= @article.description %></i></p>
+
+<%= link_to "Edit this article", edit_article_path(@article) %> |
+<%= link_to "Back to articles listing", articles_path %>

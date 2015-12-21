@@ -1,0 +1,22 @@
+<ul><% if @article.errors.any? %>
+<h2> There was a problem creating your article.</h2></br>
+<% @article.errors.full_messages.each do |msg| %>
+<li><p1><%= msg %></li></br>
+</p1><% end %>
+</ul>
+<% end %>
+<%= form_for @article do |f| %>
+<p1>
+<%= f.label :title %><br/>
+<%= f.text_field :title %>
+<br/><br/>
+<%= f.label :description %><br/>
+<%= f.text_area :description %>
+<br/><br/>
+
+<%= f.submit  :class => "button" %><br/>
+</p1>
+<% end %>
+<br/>
+
+<%= link_to "Back to articles listing", articles_path %>
